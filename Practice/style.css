@@ -1,0 +1,44 @@
+#introduction {
+  background: linear-gradient(rgba(100,181,246 ,1), rgba(0,0,0,0.8)), 
+              url('http://bit.ly/2fBj6OJ') 0% 0%/cover 
+}
+
+.fill-viewport {
+  min-height: 100vh 
+}
+
+.text-white-70 {
+  color: rgba(255,255,255,0.7)
+}
+
+.text-black-40 {
+  color: rgba(0,0,0,0.4)
+}
+
+.fill-80-viewport {
+  min-height: 80vh
+}
+
+#info--3 {
+  background: linear-gradient(rgba(100,181,246 ,1), rgba(0,0,0,0.8)), 
+              url('http://bit.ly/2fBj6OJ') 0% 0%/cover 
+}
+
+@media screen and (min-width: 768px ){
+  .basis-md-50 {
+    flex-basis: 50%
+  }  
+}
+
+.text-white-40 {
+  color: rgba(255,255,255,0.4)
+}
+
+.text-white-70 {
+  color: rgba(255,255,255,0.7)
+}
+
+.list-border-black-20 li,
+.list-border-black-20 li:last-child{
+  border-color: rgba(0,0,0,0.2)
+}

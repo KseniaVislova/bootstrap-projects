@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ТЕСТОВОЕ ЗАДАНИЕ WEB - РАЗРАБОТЧИК САЙТОВ (СТАЖЕР)</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="modal-popup" id="modal-popup">
+    <div class="overlay">
+      <div class="modal-popup__content">
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="post" class="form">
+          <legend class="form__caption">Оставить заявку</legend>
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" id="name" required>
+          <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона" id="tel" required>
+          <button class="btn form__btn" type="submit">Отправить</button>
+        </form>
+        <button type="button" class="btn-close" id="close"></button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <div class="flex-container">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link"></a>
+        </div>
+        <div class="header__lead">
+          <a href="mailto:test@mail.ru" class="header__link">test@mail.ru</a>
+          <a href="tel:+79997777777" class="header__link">+7(999)777-77-77</a>
+          <button type="button" class="btn btn-for-popup header-btn">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero flex-center">
+    <div class="container">
+      <h1 class="hero__caption section__caption">Ремонт легковых автомобилей в срок без переплат</h1>
+      <p class="hero__descp section__desc">Получите расчет стоимости по фото и запишитесь на ремонт уже сегодня</p>
+      <div class="flex-center">
+        <button type="button" class="btn  btn-for-popup hero-btn">Записаться на диагностику</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-2 flex-center">
+    <div class="container">
+      <h2 class="hero-2__caption section__caption">Будьте уверены в своем авто и нашем сервисе</h2>
+      <p class="hero-2__descp section__desc">Опытные мастера вернут ваш автомобиль в заводском состоянии</p>
+      <div class="flex-center">
+        <button type="button" class="btn btn-for-popup hero-2-btn">Записаться на ремонт</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="service">
+    <div class="container">
+      <h2 class="service__caption section__title">Получите полный комплекс услуг по ремонту и обслуживанию автомобилей
+      </h2>
+      <div class="service__list">
+        <a href="#service-tab-1" class="service__tab service__tab-active">Работаем со
+          страховыми</a>
+        <a href="#service-tab-2" class="service__tab">Замена деталей</a>
+        <a href="#service-tab-3" class="service__tab">Детейлинг</a>
+        <a href="#service-tab-4" class="service__tab">Кузовной ремонт</a>
+        <a href="#service-tab-5" class="service__tab">Шиномонтаж</a>
+        <a href="#service-tab-6" class="service__tab">Документальное сопровождение</a>
+      </div>
+      <div class="service__tabs">
+        <div id="service-tab-1" class="service__content">
+          <div class="service__text" id="service_text-1">Работаем со
+            страховыми</div>
+          <button class="btn service__text btn btn-for-popup service__btn">Записаться на консультацию</button>
+        </div>
+        <div id="service-tab-2" class="service__content">
+          <div class="service__text" id="service_text-2">Замена деталей</div>
+          <button class="btn service__text btn btn-for-popup service__btn">Узнать больше</button>
+        </div>
+        <div id="service-tab-3" class="service__content">
+          <div class="service__text" id="service_text-3">Детейлинг</div>
+          <button class="btn service__text btn btn-for-popup service__btn">Узнать подробности</button>
+        </div>
+        <div id="service-tab-4" class="service__content">
+          <div class="service__text" id="service_text-4">Кузовной ремонт</div>
+          <button class="btn service__text btn btn-for-popup service__btn">Записаться на консультацию</button>
+        </div>
+        <div id="service-tab-5" class="service__content">
+          <div class="service__text" id="service_text-5">Шиномонтаж</div>
+          <button class="btn service__text btn btn-for-popup service__btn">Узнать больше</button>
+        </div>
+        <div id="service-tab-6" class="service__content">
+          <div class="service__text" id="service_text-6">Документальное сопровождение</div>
+          <button class="btn service__text btn btn-for-popup service__btn">Узнать подробности</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__list">
+        <a href="#about-tab-1" class="about__tab about__tab-active">Преимущества</a>
+        <a href="#about-tab-2" class="about__tab">О нас</a>
+        <a href="#about-tab-3" class="about__tab">Спектр услуг</a>
+      </div>
+      <div class="about__tabs">
+        <div id="about-tab-1" class="about__content section__feature">
+          <div class="flex-container flex-column">
+            <div class="feature__column">
+              <img class="feature__img" src="img/girl.svg" alt="девушка на презентации">
+            </div>
+            <div class="feature__column">
+              <ul class="feature__list">
+                <li class="feature__item">
+                  <a class="feature__name">Срочный ремонт</a>
+                  <span class="feature__description" id="feature-1">Нет времени ждать? Отремонтируем Ваше авто вне
+                    очереди при дооплате
+                    10%</span>
+                </li>
+                <li class="feature__item"><a class="feature__name">Ремонт любой сложности</a>
+                  <span class="feature__description" id="feature-2">Оказываем полный спектр услуг, не нужно никуда
+                    идти</span>
+                </li>
+                <li class="feature__item"><a class="feature__name">Гарантия 1 год на все виды работ</a>
+                  <span class="feature__description" id="feature-3">Уверенно гарантируем качество и безопасность
+                    эксплуатации авто
+                    после проведения ремонтных и профилактических работ</span>
+                </li>
+                <li class="feature__item"><a class="feature__name">Ремонт авто за счет страховки</a>
+                  <span class="feature__description" id="feature-4">На договорной основе производим ремонт автомобилей в
+                    соответсвии с
+                    законом об ОСАГО для пострадавших в ДТП клиентов страховых компаний: ГАЙДЕБ НАСКО, ОПОРА, АНГАРА,
+                    ЭНЕРГОГАРАНТ, ВСК
+                  </span>
+                </li>
+                <li class="feature__item"><a class="feature__name">Документальное подтверждение всех работ</a>
+                  <span class="feature__description" id="feature-5">При заключении договора</span>
+                </li>
+              </ul>
+              <div class="feature__another">
+                Обладатель Всероссийской ежегодной премии г. Севастополь в номинации "СТО года"
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="about-tab-2" class="about__content section__company">
+          <div class="company__overlay">
+            <h3 class="company__caption">Ваше авто в надежных руках</h3>
+            <p class="company__descp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab a atque voluptatem
+              dolor perspiciatis eaque magni eveniet corporis animi harum, tempore sapiente adipisci, quisquam, itaque
+              temporibus quae? Tempore, assumenda voluptatem.
+              Reprehenderit, voluptate! Quibusdam quae assumenda, est fugit expedita quidem temporibus accusamus minima
+              odio consequatur labore sed neque vero, blanditiis pariatur itaque quisquam velit amet, asperiores
+              voluptatum nobis sapiente soluta? Reprehenderit?</p>
+          </div>
+        </div>
+        <div id="about-tab-3" class="about__content">
+          <ul class="section__works flex-column">
+            <li class="work__item">Послеавуарийное восстановление автомобилей</li>
+            <li class="work__item">Диагностика</li>
+            <li class="work__item">Заказ новых и б/у запчастей по ценам ниже рыночных</li>
+            <li class="work__item">Беспокрасочное удаление вмятин. PDR технология</li>
+            <li class="work__item">Малярные работы</li>
+            <li class="work__item">Полготовительные работы</li>
+            <li class="work__item">Покрытие жидким стеклом, керамикой</li>
+            <li class="work__item">Стапельные работы</li>
+            <li class="work__item">Косметический ремонт</li>
+            <li class="work__item">Сварка аргоном</li>
+            <li class="work__item">Обесшумлевание автомобилей</li>
+            <li class="work__item">Полировка</li>
+          </ul>
+          <div class="flex-center">
+            <button type="button" class="btn btn-for-popup work__btn">Получить консультацию</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="projects">
+    <div class="container">
+      <ul class="projects__list flex-column">
+        <li class="projects__item">
+          <span class="project__caption">Наш прекрасный кейс</span>
+          <span class="project__desc">То, что мы делали в нашем прекрасном кейсе</span>
+          <a href="#" class="project-btn">Побробнее</a>
+        </li>
+        <li class="projects__item">
+          <span class="project__caption">Наш прекрасный кейс</span>
+          <span class="project__desc">То, что мы делали в нашем прекрасном кейсе</span>
+          <a href="#" class="project-btn">Побробнее</a>
+        </li>
+        <li class="projects__item">
+          <span class="project__caption">Наш прекрасный кейс</span>
+          <span class="project__desc">То, что мы делали в нашем прекрасном кейсе</span>
+          <a href="#" class="project-btn">Побробнее</a>
+        </li>
+        <li class="projects__item">
+          <span class="project__caption">Наш прекрасный кейс</span>
+          <span class="project__desc">То, что мы делали в нашем прекрасном кейсе</span>
+          <a href="#" class="project-btn">Побробнее</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="process">
+    <div class="container">
+      <h2 class="process__caption section__title">Как мы работаем / Порядок оказания услуг
+      </h2>
+      <div class="process__photos">
+        <img src="img/photo.png" alt="Фото 1" class="process__photo">
+        <img src="img/photo.png" alt="Фото 2" class="process__photo">
+        <img src="img/photo.png" alt="Фото 3" class="process__photo">
+        <img src="img/photo.png" alt="Фото 4" class="process__photo">
+        <img src="img/photo.png" alt="Фото 5" class="process__photo">
+        <img src="img/photo.png" alt="Фото 6" class="process__photo">
+      </div>
+      <ul class="process__list flex-column">
+        <li class="process__item">Заявка</li>
+        <li class="process__item">Запись</li>
+        <li class="process__item">Осмотр</li>
+        <li class="process__item">Расчет стоимости</li>
+        <li class="process__item">Составление заказ-наряда</li>
+        <li class="process__item">Выполнение работы</li>
+        <li class="process__item">Контроль мастера-приемщика</li>
+        <li class="process__item">Акт выполненных работ</li>
+      </ul>
+      <div class="flex-center">
+        <button type="button" class="btn btn-for-popup process__btn">Записаться на осмотр</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback">
+    <div class="container">
+      <h2 class="feedback__caption section__title">O нас говорят
+      </h2>
+      <div class="feedback__carousel">
+        <div class="carousel__content">
+          <div class="feedback-for-mb__item feedback-for-mb__item-show">
+            <img class="feedback__avatar" src="img/female_avatar.svg" alt="avatar">
+            <h4 class="feedback__name">Имя нашего клиента 1</h4>
+            <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+              Unde totam hic ipsa
+              quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+              quia?</p>
+          </div>
+          <div class="feedback-for-mb__item">
+            <img class="feedback__avatar" src="img/male_avatar.svg" alt="avatar">
+            <h4 class="feedback__name">Имя нашего клиента 2</h4>
+            <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+              Unde totam hic ipsa
+              quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+              quia?</p>
+          </div>
+          <div class="feedback-for-mb__item">
+            <img class="feedback__avatar" src="img/female_avatar.svg" alt="avatar">
+            <h4 class="feedback__name">Имя нашего клиента 3</h4>
+            <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+              Unde totam hic ipsa
+              quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+              quia?</p>
+          </div>
+
+          <div class="buttons-mb">
+            <button type="button" class="btn feed-btn-mb feed-btn-prev-mb prev"></button>
+            <button type="button" class="btn feed-btn-mb feed-btn-next-mb next"></button>
+          </div>
+
+          <ul class="feedback__carousel-list feedback__list-show">
+            <li class="feedback__item">
+              <img class="feedback__avatar" src="img/female_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 1</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+            <li class="feedback__item">
+              <img class="feedback__avatar" src="img/male_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 2</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+            <li class="feedback__item"><img class="feedback__avatar" src="img/female_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 3</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+          </ul>
+          <ul class="feedback__carousel-list">
+            <li class="feedback__item"><img class="feedback__avatar" src="img/male_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 4</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+            <li class="feedback__item"><img class="feedback__avatar" src="img/female_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 5</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+            <li class="feedback__item"><img class="feedback__avatar" src="img/male_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 6</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+          </ul>
+          <ul class="feedback__carousel-list">
+            <li class="feedback__item"><img class="feedback__avatar" src="img/male_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 7</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+            <li class="feedback__item"><img class="feedback__avatar" src="img/female_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 8</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+            <li class="feedback__item"><img class="feedback__avatar" src="img/male_avatar.svg" alt="avatar">
+              <h4 class="feedback__name">Имя нашего клиента 9</h4>
+              <p class="feedback__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, distinctio magni!
+                Unde totam hic ipsa
+                quam delectus est, recusandae labore quo dolorum consectetur dolor nemo nisi rerum commodi doloremque
+                quia?</p>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="buttons">
+          <button type="button" class="btn feed-btn feed-btn-prev prev"></button>
+          <button type="button" class="btn feed-btn feed-btn-next next"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questions">
+    <div class="container">
+      <h2 class="questions__caption section__title">Часто задаваемые вопросы
+      </h2>
+      <ul class="questions__list">
+        <li class="questions__item flex-column"><span class="questions__q">Сколько стоит ремонт?</span><span
+            class="questions__a">Стоимость ремонта определяет мастер. Для этого необходимо приехать на осмотр.</span>
+        </li>
+        <li class="questions__item flex-column"><span class="questions__q">Запчасти покупать мне или вы
+            сами?</span><span class="questions__a">Мы можем заказать
+            детали по выгодной цене у проверенных поставщиков или использовать Ваши.</span></li>
+        <li class="questions__item flex-column"><span class="questions__q">Цена не возрастет в процессе
+            работы?</span><span class="questions__a">Заключаем договор на оказание услуг. Соблюдаем договоренности с
+            клиентом.</span></li>
+        <li class="questions__item flex-column"><span class="questions__q">От чего зависит цена?</span><span
+            class="questions__a">Мы
+            не работаем с дешевыми материалами, лаками и красками. На дешевые материалы
+            гарантию дать вам не сможет никто.</span></li>
+        <li class="questions__item flex-column"><span class="questions__q">Как быстро происходит кувозной
+            ремонт?</span><span class="questions__a">Продолжительность ремонта зависит от сложности работ. У нас есть
+            услуга срочного
+            ремонта, при доплате 10%.</span></li>
+        <li class="questions__item flex-column"><span class="questions__q">Гарантии вы даете?</span><span
+            class="questions__a">Мы
+            даем гарантию один год, при повторной неисправности бесплатно примем на исправление.</span></li>
+        <li class="questions__item flex-column"><span class="questions__q">Как давно вы работаете? Какой
+            опыт?</span><span class="questions__a">У каждого из наших сотрудников опыт работы более 10 лет. В команде мы
+            работаем с 2011
+            года.</span></li>
+      </ul>
+    </div>
+    <div class="flex-center">
+      <button type="button" class="btn btn-for-popup questions__btn">Записаться на ремонт</button>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="container">
+      <div class="flex-container contacts__container flex-column">
+        <div class="contacts__column">
+          <div class="contacts__content">
+            <h2 class="contacts__caption section__title">Наши контакты
+            </h2>
+            <a href="mailto:test@mail.ru" class="сontacts__link">test@mail.ru</a>
+            <a href="tel:+79997777777" class="сontacts__link">+7(999)777-77-77</a>
+            <p class="сontacts__name">Наш адрес</p>
+            <p class="contacts__descp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ratione
+              deserunt enim aliquam porro inventor</p>
+          </div>
+
+        </div>
+        <div class="contacts__column">
+          <img class="contacts__map" src="img/map.png" alt="Карта">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="flex-center">
+        <p class="copyrights">
+          © Made by Ксения Вислова
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <title>Ксения Вислова | Frontend-developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="/img/logo.png">
+</head>
+
+<body>
+  <header class="header fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+        <div class="dropdown me-4 d-lg-none d-block">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Меню
+          </button>
+          <ul class="dropdown-menu menu-local" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item menu-item" href="#hero">Обо мне</a></li>
+            <li><a class="dropdown-item menu-item" href="#portfolio">Мои работы</a></li>
+            <li><a class="dropdown-item menu-item" href="#contact">Связаться со мной</a></li>
+          </ul>
+        </div>
+        <a class="navbar-brand nav-link-local" href="#">
+          Главная
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav mr-4 d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link nav-link-local" href="#hero">Обо мне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-local" href="#portfolio">Мои работы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-local" href="#contact">Связаться со мной</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="overlay d-flex align-items-center">
+        <div class="container">
+          <div class="col-9 col-md-6 description">
+            <h3 class="lead mb-5">
+              Mеня зовут Вислова Ксения и я начинающий
+              <p class="display-4 section-title">
+                frontend-разработчик</p>
+            </h3>
+            <div class="technology">
+              <h5 class="lead technology-title">Мои навыки</h5>
+              <ul class="list-group list-group-horizontal-md technology-group">
+                <li class="list-group-item technology-item">HTML</li>
+                <li class="list-group-item technology-item">CSS</li>
+                <li class="list-group-item technology-item">JavaScript</li>
+                <li class="list-group-item technology-item">GIT</li>
+                <li class="list-group-item technology-item">React</li>
+                <li class="list-group-item technology-item">Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio p-50" id="portfolio">
+      <div class="container">
+        <h3 class="display-5 section-title section-title-center text-center mb-5">Мои работы</h3>
+        <div class="row justify-content-around portfolio-content">
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/BOOKVILLE.jpg" width="100%" alt="Пример работы 1" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">BOOKVILLE</h6>
+              <p class="portfolio-text">Верстка макета сайта. Заглавная страница интернет-магазина. Проект будет
+                дополняться.
+                Используемые
+                технологии: HTML, CSS, Bootstrap.</p>
+              <time class="d-block portfolio-date mb-2">Август 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Daru Link.jpg" width="100%" alt="Пример работы 1" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Учебный проект Daru Link</h6>
+              <p class="portfolio-text">Верстка макета сайта. Реализована адаптация под мобильные устройства.
+                Используемые
+                технологии: HTML, CSS, Bootstrap.</p>
+              <time class="d-block portfolio-date mb-2">Август 2021</time>
+              <a href="/prolects/" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Skillbox-2.jpg" width="100%" alt="Пример работы 3" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Lionic</h6>
+              <p class="portfolio-text">Верстка макета сайта в рамках обучения на курсах Skillbox.
+                Используемые технологии: HTML, CSS.</p>
+              <time class="d-block portfolio-date mb-2">Июль 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Skillbox-1.jpg" width="100%" alt="Пример работы 3" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Skillbox</h6>
+              <p class="portfolio-text">Верстка макета сайта в рамках обучения на курсах Skillbox.
+                Используемые технологии: HTML, CSS.</p>
+              <time class="d-block portfolio-date mb-2">Июль 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/WHSLandings.jpg" width="100%" alt="Пример работы 2" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Учебный проект WebHero School</h6>
+              <p class="portfolio-text">Верстка макета сайта. Реализована адаптация под мобильные устройства.
+                Используемые
+                технологии: HTML, CSS.</p>
+              <time class="d-block portfolio-date mb-2">Июль 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Cards.jpg" width="100%" alt="Пример работы 6" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Cards</h6>
+              <p class="portfolio-text">Сделано в рамках марафона по JS Владилена Минина
+                Используемые технологии: HTML, CSS, JavaScript.</p>
+              <time class="d-block portfolio-date mb-2">Июнь 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Desk.jpg" width="100%" alt="Пример работы 6" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Board</h6>
+              <p class="portfolio-text">Сделано в рамках марафона по JS Владилена Минина
+                Используемые технологии: HTML, CSS, JavaScript.</p>
+              <time class="d-block portfolio-date mb-2">Июнь 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Aim Training.jpg" width="100%" alt="Пример работы 6" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Aim Training</h6>
+              <p class="portfolio-text">Сделано в рамках марафона по JS Владилена Минина
+                Используемые технологии: HTML, CSS, JavaScript.</p>
+              <time class="d-block portfolio-date mb-2">Июнь 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Slider.jpg" width="100%" alt="Пример работы 7" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Slider</h6>
+              <p class="portfolio-text">Сделано в рамках марафона по JS Владилена Минина
+                Используемые технологии: HTML, CSS, JavaScript.</p>
+              <time class="d-block portfolio-date mb-2">Июнь 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/locus.jpg" width="100%" alt="Пример работы 3" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Locus</h6>
+              <p class="portfolio-text">Верстка макета сайта.
+                Используемые технологии: HTML, CSS.</p>
+              <time class="d-block portfolio-date mb-2">Июнь 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/Axion.jpg" width="100%" alt="Пример работы 3" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Учебный проект Axion</h6>
+              <p class="portfolio-text">Верстка макета сайта. Реализована адаптация под мобильные устройства.
+                Используемые технологии: HTML, CSS.</p>
+              <time class="d-block portfolio-date mb-2">Май 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/app.creation.jpg" width="100%" alt="Пример работы 4" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Учебный проект app.creation</h6>
+              <p class="portfolio-text">Верстка макета сайта. Реализована адаптация под мобильные устройства.
+                Используемые технологии: HTML, CSS.</p>
+              <time class="d-block portfolio-date mb-2">Март 2021</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+          <div class="card portfolio-card mb-4 me-2" style="width: 22rem;">
+            <img src="/img/portfolio/CatsDogs.jpg" width="100%" alt="Пример работы 5" class="mb-3">
+            <div class="portfolio-card-body">
+              <h6 class="portfolio-subtitle mb-2">Игра на JavaScript</h6>
+              <p class="portfolio-text">Верстка макета сайта. Реализована адаптация под мобильные устройства.
+                Используемые технологии: HTML, CSS, JavaScript.</p>
+              <time class="d-block portfolio-date mb-2">Декабрь 2020</time>
+              <a href="" class="d-block">Посмотреть</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact p-50 d-flex align-items-center" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class=" col col-md-6 d-flex flex-column justify-content-center">
+            <h3 class="display-5 mb-5 section-title">Связаться со мной</h3>
+            <div class="social d-flex">
+              <a href="https://vk.com/kseeelis" target="_blank" class="sosial-icon vk-icon me-4"></a>
+              <a href="https://t.me/kvislova" target="_blank" class="sosial-icon telegram-icon me-4"></a>
+              <a href="https://www.instagram.com/kvislova" target="_blank" class="sosial-icon instagram-icon me-4"></a>
+              <a href="mailto:kseniavislova@gmail.com" target="_blank" class="sosial-icon gmail-icon"></a>
+            </div>
+          </div>
+          <div class="col-6 d-none d-md-block about-decoration">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+      url('/fonts/SFProDisplay-Medium.woff2') format('woff2'),
+      url('/fonts/SFProDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+      url('/fonts/SFProDisplay-Bold.woff2') format('woff2'),
+      url('/fonts/SFProDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
+      url('/fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+      url('/fonts/SFProDisplay-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+      url('/fonts/SFProDisplay-Regular.woff2') format('woff2'),
+      url('/fonts/SFProDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: local('Mont Bold'), local('Mont-Bold'),
+      url('/fonts/Mont-Bold.woff2') format('woff2'),
+      url('/fonts/Mont-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: local('Mont SemiBold'), local('Mont-SemiBold'),
+      url('/fonts/Mont-SemiBold.woff2') format('woff2'),
+      url('/fonts/Mont-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: local('Mont Regular'), local('Mont-Regular'),
+      url('/fonts/Mont-Regular.woff2') format('woff2'),
+      url('/fonts/Mont-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: SF Pro Display, Arial, Helvetica, sans-serif;
+  background-color: #11161E;
+}
+
+
+.bg-1 {
+  background-color: #181F29;
+}
+
+.p-top-100 {
+  padding-top: 100px;
+}
+
+.p-bottom-160 {
+  padding-bottom: 160px;
+}
+
+.text-grey-80 {
+  color: rgba(118, 134, 159, 0.8);
+}
+
+.nav-link-hover:hover, .footer-link-hover:hover {
+  color: #5CA35B;
+}
+
+.fs-18 {
+  font-size: 1.125em;
+}
+
+.text-grey-p {
+  color: #6A7C95;
+}
+
+.btn-menu-local {
+  background-color: #5CA35B; 
+  font-size: 1.125em;
+}
+
+.menu-local {
+  min-width: 15rem;
+  background-color: #181F29;
+  font-size: 1.5em;
+}
+
+.menu-local-item:hover {
+  background-color: #11161E;
+}
+
+.btn-local {
+  background-color: #5CA35B;
+}
+
+.btn-local-grey {
+  background-color: #212A38;
+}
+
+.fs-62 {
+  font-size: 3.875em;
+  line-height: 1;
+}
+
+.fs-26 {
+  font-size: 1.6em;
+  line-height: 1.3em;
+}
+
+.fs-24 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.feature-item {
+  padding: 37px 33px;
+  width: 317px;
+  background: #273140;
+  box-shadow: 0px 1px 26px rgba(24, 31, 41, 0.15);
+  border-radius: 15px;
+}
+
+.feature-icon {
+  display: block;
+  width: 91px;
+  height: 91px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-icon-1 {
+  background-image: url('/img/icon_clock.png');
+}
+
+.feature-icon-2 {
+  background-image: url('/img/Image_blue.png');
+}
+
+.feature-icon-3 {
+  background-image: url('/img/Settings.png');
+}
+
+.opportunity-icon-1 {
+  width: 54px;
+  height: auto;
+}
+
+.opportunity-icon-2 {
+  width: 86px;
+  height: auto;
+}
+
+.opportunity-icon-3 {
+  width: 375px;
+  height: auto;
+}
+
+.price-content {
+  font-family: Mont, Arial, Helvetica, sans-serif;
+}
+
+.price-content-span {
+  font-size: 0.75em;
+  color: #3B485A;
+}
+
+.price-item-active {
+  color: #717E92;
+}
+
+.price-item-disabled {
+  color: #3B485A;
+}
+
+.price-btn {
+  width: 100%;
+  font-size: 1.125em;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.price-btn-1 {
+  background: #6A7395;
+}
+
+.price-btn-2 {
+  background:#6A9590;
+}
+
+.price-btn-3 {
+  background: #95936A;
+}
+
+.p-top-40 {
+  padding-top: 40px;
+}
+
+.p-bottom-80 {
+  padding-bottom: 80px;
+}
+
+.text-footer {
+  font-size: 0.75rem;
+  color: #2D3746;
+}
+
+.footer-logo {
+  width: 22px;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.btn-hover:hover {
+  transform: scale(1.1);
+}
+
+.btn-animation {
+  transition: transform 0.5s ease-in-out;
+}
+
+.feature-item-hover:hover {
+  background-color: #212A38;
+}
+
+.feature-item-animation {
+    transition: background-color 0.5s ease-in-out 0.3s;
+}
+
+.p-top-30 {
+  padding-top: 30px;
+}
+
+.btn-local-hover:hover {
+  background-color: #212A38;
+  transition: background-color 0.5s ease-in-out 0.3s;
+}
+
+.btn-local-grey-hover:hover {
+  background-color: #5CA35B;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.p-bottom-m-100 {
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px){
+.p-top-100 {
+  padding-top: 50px;
+}
+
+.p-bottom-160 {
+  padding-bottom: 80px;
+}
+
+.p-bottom-m-100 {
+    padding-bottom: 100px;
+}
+
+.p-top-40 {
+  padding-top: 40px;
+}
+
+.p-bottom-80 {
+  padding-bottom: 50px;
+}
+}
+
+
+@media (max-width: 576px){
+  .p-top-100 {
+    padding-top: 30px;
+  }
+  
+  .p-bottom-160 {
+    padding-bottom: 60px;
+  }
+  
+  .p-bottom-m-100 {
+      padding-bottom: 60px;
+  }
+  
+  .p-top-40 {
+    padding-top: 30px;
+  }
+  
+  .p-bottom-80 {
+    padding-bottom: 40px;
+  }
+
+  .footer-mobile-align {
+    text-align: center;
+  }
+
+  .feature-item {
+    width: 290px;
+  }
+
+  .update-icon-size {
+    width: 40px;
+    height: auto;
+  }
+  }

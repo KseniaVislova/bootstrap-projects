@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #0C0B0B;
+}
+
+/*common*/
+
+.padding {
+  padding: 24px;
+}
+
+.title {
+  font-family: 'Baloo Bhai 2', Arial, Helvetica, sans-serif;
+  font-size: 2.25em;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.section-text {
+  margin: 0;
+}
+
+.course-icon {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.course-title {
+  font-family: 'Baloo Bhai 2', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: 700;
+}
+
+.course-author {
+  font-size: 0.8125em;
+}
+.course-progress {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #0C0B0B;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-size: 0.8125em;
+}
+
+.btn-local {
+  padding: 12px;
+  color: #fff;
+  background-color: #0C0B0B;
+}
+
+
+/*navigation*/
+
+.logo {
+  margin-right: 0;
+  font-family: 'Baloo Bhai 2', Arial, Helvetica, sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.menu {
+  padding: 24px;
+}
+
+.menu-nav {
+  padding: 43px;
+  max-width: 46px;
+  height: 90vh;
+  background: #0C0B0B;
+  border-radius: 24px;
+}
+
+
+.nav-link-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+}
+
+.home {
+  width: 26px;
+  height: 26px;
+  background-image: url('../img/home.svg');
+}
+
+
+.education {
+  width: 28px;
+  height: 23px;
+  background-image: url('../img/education.svg');
+}
+
+.user {
+  width: 26px;
+  height: 26px;
+  background-image: url('../img/user.svg');
+}
+
+.chat {
+  width: 23px;
+  height: 26px;
+  background-image: url('../img/mail.svg');
+}
+
+.settings {
+  width: 26px;
+  height: 23px;
+  background-image: url('../img/settings.svg');
+}
+
+.login {
+  width: 27px;
+  height: 27px;
+  background-image: url('../img/login.svg');
+}
+
+/*header*/
+
+.header {
+  position: relative;
+  margin-bottom: 24px;
+  padding-top: 30px;
+}
+
+.header::before {
+  position: absolute;
+  content: '';
+  width: 175px;
+  height: 191px;
+  bottom: 0;
+  right: 50px;
+  background-image: url('../img/Illustration.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header-content {
+  padding: 60px 30px 30px;
+  background: #F5F5F7;
+  border-radius: 14px;
+}
+
+/*slider courses*/
+
+.slider-course {
+  margin-bottom: 40px;
+}
+
+.slider-course-content {
+  padding: 8px;
+  flex-wrap: nowrap;
+  background: #F5F5F7;
+  border-radius: 14px;
+}
